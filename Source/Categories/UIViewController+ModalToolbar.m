@@ -16,7 +16,7 @@
 }
 
 - (void)presentModalViewControllerWithToolbar:(UIViewController *)viewController
-                                     animated:(const BOOL)animated
+                                     animated:(BOOL)animated
                                backButtonName:(NSString *)name
 {
     // Wrap modal view controller in a generic UINavigationController in order to

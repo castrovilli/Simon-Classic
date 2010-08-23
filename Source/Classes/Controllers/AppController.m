@@ -15,7 +15,7 @@
 #import "SoundPrefKeys.h"
 #import "GameOverSounds.h"
 
-NSString * const highscoreKey = @"HighScore";
+static NSString * const highscoreKey = @"HighScore";
 
 @implementation AppController
 
@@ -79,7 +79,7 @@ NSString * const highscoreKey = @"HighScore";
     gameOverSound = [[LosslessSound alloc] initWithSoundNamed:gameOverSoundName
                                                        ofType:@"caf"];
     if (gameOverSound == nil) {
-        NSLog(@"Could not load sound %@: %@", gameOverSoundName);
+        NSLog(@"Could not load sound %@", gameOverSoundName);
     }
 }
 
