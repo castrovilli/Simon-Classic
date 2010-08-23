@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E1A794B11229C4400A17ECA /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E1A794A11229C4400A17ECA /* Entitlements.plist */; };
+		0E14A9311223320A0090693A /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E14A9301223320A0090693A /* iAd.framework */; };
 		0E2DB255112FD66F0074BF21 /* SimonSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DB254112FD66F0074BF21 /* SimonSettingsViewController.m */; };
 		0E2DB25A112FD7AE0074BF21 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DB259112FD7AE0074BF21 /* bg.png */; };
 		0E2DB2E4112FE75B0074BF21 /* UIViewController+ModalToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DB2E3112FE75B0074BF21 /* UIViewController+ModalToolbar.m */; };
@@ -60,12 +60,13 @@
 		0E775D6311227FD00017B13A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D6211227FD00017B13A /* CoreFoundation.framework */; };
 		0E775D6711227FD80017B13A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D6611227FD80017B13A /* QuartzCore.framework */; };
 		0E775D7211227FFF0017B13A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D7111227FFF0017B13A /* CoreGraphics.framework */; };
-		0E775D851122809F0017B13A /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D841122809F0017B13A /* libFlurry.a */; };
 		0E775D93112287E50017B13A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E775D92112287E50017B13A /* Default.png */; };
+		0ED5BF431223170800FA0E6D /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED5BF421223170800FA0E6D /* Settings.xib */; };
+		245758F61222B72500BD5A42 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 245758F51222B72500BD5A42 /* libFlurry.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E1A794A11229C4400A17ECA /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		0E14A9301223320A0090693A /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		0E2DB253112FD66F0074BF21 /* SimonSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimonSettingsViewController.h; path = ../Views/SimonSettingsViewController.h; sourceTree = "<group>"; };
 		0E2DB254112FD66F0074BF21 /* SimonSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimonSettingsViewController.m; path = ../Views/SimonSettingsViewController.m; sourceTree = "<group>"; };
 		0E2DB259112FD7AE0074BF21 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		0E389F151133B508000CAB51 /* LosslessSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LosslessSound.m; sourceTree = "<group>"; };
 		0E389F291133B80B000CAB51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0E389FA51133C5D3000CAB51 /* default_green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_green.caf; sourceTree = "<group>"; };
+		0E3937BA1223269600E7B030 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		0E4BC593113247A000DDD591 /* SoundPrefKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPrefKeys.h; sourceTree = "<group>"; };
 		0E4BC594113247A000DDD591 /* SoundPrefKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPrefKeys.m; sourceTree = "<group>"; };
 		0E4BC5A311324C9700DDD591 /* GameOverSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverSounds.h; sourceTree = "<group>"; };
@@ -147,14 +149,16 @@
 		0E775D6211227FD00017B13A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		0E775D6611227FD80017B13A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E775D7111227FFF0017B13A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0E775D831122809F0017B13A /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
-		0E775D841122809F0017B13A /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		0E775D92112287E50017B13A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0E775DAD112289E80017B13A /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
 		0EA8B7CB11344D07008FA078 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = Localizations/fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0EA8B7CE11344D11008FA078 /* zn_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zn_CN; path = Localizations/zn_CN.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0EA8B7CF11344D14008FA078 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizations/ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0ED5BF421223170800FA0E6D /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Simon Classic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon Classic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		245758F31222B72500BD5A42 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		245758F41222B72500BD5A42 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		245758F51222B72500BD5A42 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +171,9 @@
 				0E775D6311227FD00017B13A /* CoreFoundation.framework in Frameworks */,
 				0E775D6711227FD80017B13A /* QuartzCore.framework in Frameworks */,
 				0E775D7211227FFF0017B13A /* CoreGraphics.framework in Frameworks */,
-				0E775D851122809F0017B13A /* libFlurry.a in Frameworks */,
 				0E389F2A1133B80B000CAB51 /* AudioToolbox.framework in Frameworks */,
+				245758F61222B72500BD5A42 /* libFlurry.a in Frameworks */,
+				0E14A9311223320A0090693A /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2DB2F0112FF6CD0074BF21 /* Simon.xib */,
+				0ED5BF421223170800FA0E6D /* Settings.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -433,7 +439,8 @@
 		0E775D0111227F5B0017B13A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E775D821122809F0017B13A /* FlurryLib */,
+				245758F21222B72500BD5A42 /* FlurryLib */,
+				0E14A9301223320A0090693A /* iAd.framework */,
 				0E389F291133B80B000CAB51 /* AudioToolbox.framework */,
 				0E775D7111227FFF0017B13A /* CoreGraphics.framework */,
 				0E775D6611227FD80017B13A /* QuartzCore.framework */,
@@ -444,15 +451,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0E775D821122809F0017B13A /* FlurryLib */ = {
-			isa = PBXGroup;
-			children = (
-				0E775D831122809F0017B13A /* FlurryAPI.h */,
-				0E775D841122809F0017B13A /* libFlurry.a */,
-			);
-			path = FlurryLib;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,15 +459,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		245758F21222B72500BD5A42 /* FlurryLib */ = {
+			isa = PBXGroup;
+			children = (
+				245758F31222B72500BD5A42 /* FlurryAdDelegate.h */,
+				245758F41222B72500BD5A42 /* FlurryAPI.h */,
+				245758F51222B72500BD5A42 /* libFlurry.a */,
+			);
+			path = FlurryLib;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0E3937BA1223269600E7B030 /* Entitlements.plist */,
 				0E7759E81122187E0017B13A /* Source */,
 				0E775D0111227F5B0017B13A /* Frameworks */,
 				0E7759C3112218760017B13A /* Resources */,
 				0E775A0E112219030017B13A /* Info.plist */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				0E1A794A11229C4400A17ECA /* Entitlements.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -540,7 +548,6 @@
 				0E7759E0112218760017B13A /* yellow-lit.png in Resources */,
 				0E7759E2112218760017B13A /* icon.png in Resources */,
 				0E775D93112287E50017B13A /* Default.png in Resources */,
-				0E1A794B11229C4400A17ECA /* Entitlements.plist in Resources */,
 				0E2DB25A112FD7AE0074BF21 /* bg.png in Resources */,
 				0E2DB2F1112FF6CD0074BF21 /* Simon.xib in Resources */,
 				0E4BC7EE11339E0500DDD591 /* Changes.txt in Resources */,
@@ -557,6 +564,7 @@
 				0E389F0E1133B331000CAB51 /* marimba_blue.caf in Resources */,
 				0E389F0F1133B331000CAB51 /* marimba_green.caf in Resources */,
 				0E389FA61133C5D3000CAB51 /* default_green.caf in Resources */,
+				0ED5BF431223170800FA0E6D /* Settings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,12 +636,14 @@
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karl Sanders";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
 				PRODUCT_NAME = Simon;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1FFA80AA-0574-4BA3-A66E-05CEE7FB5621";
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Distribution;
 		};
@@ -641,13 +651,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Dropbox/Apps/iPhone/Simon-Classic/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Simon_Classic_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Source/motally\"",
 					"\"$(SRCROOT)/FlurryLib\"",
 				);
 				PRODUCT_NAME = "Simon Classic";
@@ -658,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Dropbox/Apps/iPhone/Simon-Classic/Entitlements.plist";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -666,7 +677,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Source/motally\"",
 					"\"$(SRCROOT)/FlurryLib\"",
 				);
 				PRODUCT_NAME = "Simon Classic";
@@ -677,13 +687,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Dropbox/Apps/iPhone/Simon-Classic/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Simon_Classic_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Source/motally\"",
 					"\"$(SRCROOT)/FlurryLib\"",
 				);
 				PRODUCT_NAME = "Simon Classic";
@@ -694,15 +704,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Karl Sanders";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "-DDEBUG=1";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Simon;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Debug;
 		};
@@ -710,13 +724,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
 				PRODUCT_NAME = Simon;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphonesimulator4.0;
 			};
 			name = Release;
 		};

@@ -14,6 +14,11 @@
 
 @implementation SimonSettingsViewController
 
+- (id)init
+{
+    return [self initWithNibName:@"Settings" bundle:nil];
+}
+
 - (void)constructTableGroups
 {
     // Here I have changed IFChoiceCellController to accept a dictionary

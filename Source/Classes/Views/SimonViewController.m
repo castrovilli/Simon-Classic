@@ -10,6 +10,7 @@
 #import "SimonSettingsViewController.h"
 #import "UIViewController+ModalToolbar.h"
 #import "IFPreferencesModel.h"
+#import "FlurryAPI.h"
 
 NSString * const kSimonButtonSoundSetDefault = @"Default";
 NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
@@ -67,7 +68,7 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
 - (IBAction)showSettings:(id)sender
 {
     SimonSettingsViewController *simonSettingsViewController =
-        [[SimonSettingsViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        [[SimonSettingsViewController alloc] init];
     [simonSettingsViewController setTitle:[settingsButton title]];
 
     // A wrapper around NSUserDefaults that sets key based on the user input we
@@ -80,6 +81,8 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
                                        animated:YES
                                  backButtonName:backButtonName];
     [simonSettingsViewController release];
+
+    [FlurryAPI logEvent:@"LoadedSettings"];
 }
 
 #pragma mark -
