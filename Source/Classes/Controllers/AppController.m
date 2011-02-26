@@ -93,9 +93,14 @@ static NSString * const highscoreKey = @"HighScore";
     }
 
     NSString *bestScoreText =
-        [[NSString alloc] initWithFormat:@"%@: %d", highscoreWord, highscore];
+        [[NSString alloc] initWithFormat:@"%@: %zd", highscoreWord, highscore];
     [[simonViewController bestScoreLabel] setText:bestScoreText];
     [bestScoreText release];
+
+    // Save highscore now just to be safe.
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setInteger:highscore forKey:highscoreKey];
+    [userDefaults synchronize];
 }
 
 - (SoundButton *)simonButtonOfType:(SimonButtonType)buttonType
@@ -120,20 +125,10 @@ static NSString * const highscoreKey = @"HighScore";
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
-    DLog(@"Saving highscore for next time.");
-    [userDefaults setInteger:highscore forKey:highscoreKey];
-
-    // Log high score to Flurry.
-    NSNumber *theScore = [NSNumber numberWithUnsignedInteger:highscore];
-    NSDictionary *parameters =
-        [[NSDictionary alloc] initWithObjectsAndKeys:theScore, @"score", nil];
-    [FlurryAPI logEvent:@"Highscore" withParameters:parameters];
-    [parameters release];
-
     // Log sound preferences to Flurry.
     NSString *buttonSoundSet = [userDefaults stringForKey:simonSoundSetKey];
     NSString *gameOverSoundName = [userDefaults stringForKey:gameOverSoundKey];
-    parameters =
+    NSDictionary *parameters =
         [[NSDictionary alloc] initWithObjectsAndKeys:gameOverSoundName,
                                                      @"Gameover Sound",
                                                      buttonSoundSet,
@@ -261,6 +256,13 @@ static NSString * const highscoreKey = @"HighScore";
 
     if (newScore > highscore) {
         [self setHighScore:newScore];
+
+        // Log high score to Flurry.
+        NSNumber *theScore = [NSNumber numberWithUnsignedInteger:highscore];
+        NSDictionary *parameters =
+            [[NSDictionary alloc] initWithObjectsAndKeys:theScore, @"score", nil];
+        [FlurryAPI logEvent:@"Highscore" withParameters:parameters];
+        [parameters release];
     }
 }
 
