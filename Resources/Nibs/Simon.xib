@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
-		<string key="IBDocument.SystemVersion">10F569</string>
-		<string key="IBDocument.InterfaceBuilderVersion">788</string>
-		<string key="IBDocument.AppKitVersion">1038.29</string>
-		<string key="IBDocument.HIToolboxVersion">461.00</string>
+		<string key="IBDocument.SystemVersion">10J567</string>
+		<string key="IBDocument.InterfaceBuilderVersion">804</string>
+		<string key="IBDocument.AppKitVersion">1038.35</string>
+		<string key="IBDocument.HIToolboxVersion">462.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">117</string>
+			<string key="NS.object.0">123</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -63,7 +63,7 @@
 					<object class="IBUIImageView" id="469802587">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 84}, {145, 145}}</string>
+						<string key="NSFrame">{{26, 105}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -77,11 +77,15 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">green-dim.png</string>
 						</object>
+						<object class="NSCustomResource" key="IBUIHighlightedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">green-lit.png</string>
+						</object>
 					</object>
 					<object class="IBUIImageView" id="648185091">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{160.5, 82.5}, {145, 145}}</string>
+						<string key="NSFrame">{{163, 104}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -95,11 +99,15 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">red-dim.png</string>
 						</object>
+						<object class="NSCustomResource" key="IBUIHighlightedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">red-lit.png</string>
+						</object>
 					</object>
 					<object class="IBUIImageView" id="990366637">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{160.5, 231.5}, {145, 145}}</string>
+						<string key="NSFrame">{{163, 243}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -113,11 +121,15 @@
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">blue-dim.png</string>
 						</object>
+						<object class="NSCustomResource" key="IBUIHighlightedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">blue-lit.png</string>
+						</object>
 					</object>
 					<object class="IBUIImageView" id="268875498">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 231}, {145, 145}}</string>
+						<string key="NSFrame">{{26, 243}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -130,6 +142,10 @@
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">yellow-dim.png</string>
+						</object>
+						<object class="NSCustomResource" key="IBUIHighlightedImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">yellow-lit.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="204563395">
@@ -339,12 +355,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="951363000"/>
 							<reference ref="204563395"/>
-							<reference ref="990366637"/>
-							<reference ref="648185091"/>
 							<reference ref="161625807"/>
-							<reference ref="469802587"/>
-							<reference ref="268875498"/>
 							<reference ref="180448248"/>
+							<reference ref="469802587"/>
+							<reference ref="648185091"/>
+							<reference ref="268875498"/>
+							<reference ref="990366637"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -419,13 +435,17 @@
 					<string>30.IBPluginDependency</string>
 					<string>4.CustomClassName</string>
 					<string>4.IBPluginDependency</string>
+					<string>4.IBViewBoundsToFrameTransform</string>
 					<string>5.CustomClassName</string>
 					<string>5.IBPluginDependency</string>
+					<string>5.IBViewBoundsToFrameTransform</string>
 					<string>6.IBPluginDependency</string>
 					<string>7.CustomClassName</string>
 					<string>7.IBPluginDependency</string>
+					<string>7.IBViewBoundsToFrameTransform</string>
 					<string>8.CustomClassName</string>
 					<string>8.IBPluginDependency</string>
+					<string>8.IBViewBoundsToFrameTransform</string>
 					<string>9.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
@@ -435,18 +455,30 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{442, 78}, {320, 460}}</string>
+					<string>{{232, 144}, {320, 460}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>SoundButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABB4AAAw8EAAA</bytes>
+					</object>
 					<string>SoundButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABB2AAAw3wAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>SoundButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDIIAAw3uAAA</bytes>
+					</object>
 					<string>SoundButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDIYAAw8DAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -466,7 +498,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">32</int>
+			<int key="maxID">33</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -501,14 +533,35 @@
 					<string key="className">SimonViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">showSettings:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>showSettings:</string>
+							<string>tappedSimonButton:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>SoundButton</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">showSettings:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">showSettings:</string>
-							<string key="candidateClassName">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>showSettings:</string>
+							<string>tappedSimonButton:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">showSettings:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">tappedSimonButton:</string>
+								<string key="candidateClassName">SoundButton</string>
+							</object>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -857,19 +910,27 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>bg.png</string>
 				<string>blue-dim.png</string>
+				<string>blue-lit.png</string>
 				<string>green-dim.png</string>
+				<string>green-lit.png</string>
 				<string>red-dim.png</string>
+				<string>red-lit.png</string>
 				<string>yellow-dim.png</string>
+				<string>yellow-lit.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 460}</string>
-				<string>{145, 145}</string>
-				<string>{145, 145}</string>
-				<string>{145, 145}</string>
-				<string>{145, 145}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
+				<string>{131, 131}</string>
 			</object>
 		</object>
-		<string key="IBCocoaTouchPluginVersion">117</string>
+		<string key="IBCocoaTouchPluginVersion">123</string>
 	</data>
 </archive>
