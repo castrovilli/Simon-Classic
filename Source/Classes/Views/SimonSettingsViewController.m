@@ -19,6 +19,16 @@
     return [self initWithNibName:@"Settings" bundle:nil];
 }
 
+#pragma mark UIViewController
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    return orientation == UIInterfaceOrientationPortrait ||
+           orientation == UIInterfaceOrientationPortraitUpsideDown;
+}
+
+#pragma mark -
+
 - (void)constructTableGroups
 {
     // Here I have changed IFChoiceCellController to accept a dictionary

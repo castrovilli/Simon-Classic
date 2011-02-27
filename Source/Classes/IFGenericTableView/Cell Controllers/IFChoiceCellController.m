@@ -93,7 +93,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     // effect on the indentation. We'll use 20 here and cross our fingers
     // that this doesn't screw things up in the future.
     CGSize labelSize = [label sizeWithFont:[textLabel font]];
-    const CGFloat viewWidth = 255.0f - (labelSize.width + (20.0f * indentationLevel));
+    const CGFloat viewWidth = 260.0f - (labelSize.width + (20.0f * indentationLevel));
 
     id choiceValue = [model objectForKey:key];
     if (choiceValue == nil) {
@@ -119,6 +119,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                                                    blue:0.52f
                                                   alpha:1.0f]];
         [choiceLabel setHighlightedTextColor:[UIColor whiteColor]];
+        [choiceLabel setBackgroundColor:[UIColor clearColor]];
         [cell setView:choiceLabel];
         [choiceLabel release];
     } else if ([choice isKindOfClass:[IFNamedImage class]]) {
@@ -126,7 +127,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         UILabel *choiceLabel = [[UILabel alloc] initWithFrame:frame];
         [choiceLabel setText:[choice name]];
         [choiceLabel setFont:[UIFont systemFontOfSize:17.0f]];
-        [choiceLabel setBackgroundColor:[UIColor whiteColor]];
+        [choiceLabel setBackgroundColor:[UIColor clearColor]];
         [choiceLabel setHighlightedTextColor:[UIColor whiteColor]];
         [choiceLabel setTextAlignment:UITextAlignmentRight];
         [choiceLabel setTextColor:[UIColor colorWithRed:0.20f
