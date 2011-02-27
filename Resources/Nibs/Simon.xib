@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
 		<string key="IBDocument.SystemVersion">10J567</string>
-		<string key="IBDocument.InterfaceBuilderVersion">804</string>
+		<string key="IBDocument.InterfaceBuilderVersion">823</string>
 		<string key="IBDocument.AppKitVersion">1038.35</string>
 		<string key="IBDocument.HIToolboxVersion">462.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">123</string>
+			<string key="NS.object.0">132</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -63,7 +63,7 @@
 					<object class="IBUIImageView" id="469802587">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{26, 105}, {145, 145}}</string>
+						<string key="NSFrame">{{26, 96}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -85,7 +85,7 @@
 					<object class="IBUIImageView" id="648185091">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{163, 104}, {145, 145}}</string>
+						<string key="NSFrame">{{163, 95}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -107,7 +107,7 @@
 					<object class="IBUIImageView" id="990366637">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{163, 243}, {145, 145}}</string>
+						<string key="NSFrame">{{163, 234}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -129,7 +129,7 @@
 					<object class="IBUIImageView" id="268875498">
 						<reference key="NSNextResponder" ref="600808363"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{26, 243}, {145, 145}}</string>
+						<string key="NSFrame">{{26, 234}, {145, 145}}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -207,7 +207,7 @@
 					</object>
 					<object class="IBUIToolbar" id="951363000">
 						<reference key="NSNextResponder" ref="600808363"/>
-						<int key="NSvFlags">266</int>
+						<int key="NSvFlags">290</int>
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="600808363"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -533,35 +533,14 @@
 					<string key="className">SimonViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>showSettings:</string>
-							<string>tappedSimonButton:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>SoundButton</string>
-						</object>
+						<string key="NS.key.0">showSettings:</string>
+						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>showSettings:</string>
-							<string>tappedSimonButton:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBActionInfo">
-								<string key="name">showSettings:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">tappedSimonButton:</string>
-								<string key="candidateClassName">SoundButton</string>
-							</object>
+						<string key="NS.key.0">showSettings:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">showSettings:</string>
+							<string key="candidateClassName">id</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -838,6 +817,13 @@
 					<string key="className">UIView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">UIKit.framework/Headers/UIPrintFormatter.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UITextField.h</string>
 					</object>
 				</object>
@@ -895,7 +881,7 @@
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
-			<integer value="1024" key="NS.object.0"/>
+			<integer value="1056" key="NS.object.0"/>
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
@@ -931,6 +917,6 @@
 				<string>{131, 131}</string>
 			</object>
 		</object>
-		<string key="IBCocoaTouchPluginVersion">123</string>
+		<string key="IBCocoaTouchPluginVersion">132</string>
 	</data>
 </archive>
