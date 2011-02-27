@@ -31,7 +31,17 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
 
 - (id)init
 {
-    return [super initWithNibName:@"Simon" bundle:nil];
+    BOOL iPad = NO;
+
+    // For reasons unbeknownst to me, the UI_USER_INTERFACE_IDIOM is undefined in
+    // all SDKs outside of iOS 3.2 (the iPad SDK), making it impossible to detect
+    // an iPad in a universal app without this ugly macro.
+#ifdef UI_USER_INTERFACE_IDIOM
+    iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+#endif
+
+    NSString *nibName = iPad ? @"Simon-iPad" : @"Simon";
+    return [super initWithNibName:nibName bundle:nil];
 }
 
 - (void)viewDidLoad
@@ -97,6 +107,16 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
     if ([delegate respondsToSelector:@selector(settingsChanged)]) {
         [delegate settingsChanged];
     }
+}
+
+#pragma mark -
+
+#pragma mark UIViewController
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    return orientation == UIInterfaceOrientationPortrait ||
+           orientation == UIInterfaceOrientationPortraitUpsideDown;
 }
 
 #pragma mark -
