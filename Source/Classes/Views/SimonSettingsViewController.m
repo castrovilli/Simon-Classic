@@ -23,8 +23,17 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
+    BOOL iPad = NO;
+
+#ifdef UI_USER_INTERFACE_IDIOM
+    iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+#endif
+
     return orientation == UIInterfaceOrientationPortrait ||
-           orientation == UIInterfaceOrientationPortraitUpsideDown;
+           orientation == UIInterfaceOrientationPortraitUpsideDown ||
+           (iPad && // Landscape mode is only supported on the iPad.
+            (orientation == UIInterfaceOrientationLandscapeLeft ||
+             orientation == UIInterfaceOrientationLandscapeRight));
 }
 
 #pragma mark -
