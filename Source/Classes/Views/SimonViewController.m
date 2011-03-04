@@ -24,6 +24,7 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
 @synthesize blueButton;
 @synthesize yellowButton;
 
+@synthesize bgView;
 @synthesize currentScoreLabel;
 @synthesize bestScoreLabel;
 @synthesize settingsButton;
@@ -115,8 +116,43 @@ NSString * const kSimonButtonSoundSetMarimba = @"Marimba";
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
+    BOOL iPad = NO;
+
+#ifdef UI_USER_INTERFACE_IDIOM
+    iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+#endif
+
     return orientation == UIInterfaceOrientationPortrait ||
-           orientation == UIInterfaceOrientationPortraitUpsideDown;
+           orientation == UIInterfaceOrientationPortraitUpsideDown ||
+           (iPad && // Landscape mode is only supported on the iPad.
+            (orientation == UIInterfaceOrientationLandscapeLeft ||
+             orientation == UIInterfaceOrientationLandscapeRight));
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)orientation
+                                         duration:(NSTimeInterval)duration
+{
+    BOOL iPad = NO;
+
+#ifdef UI_USER_INTERFACE_IDIOM
+    iPad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+#endif
+
+    if (iPad) {
+        if (orientation == UIInterfaceOrientationLandscapeLeft ||
+            orientation == UIInterfaceOrientationLandscapeRight) {
+            [playButton setWidth:500.0];
+            [settingsButton setWidth:500.0];
+
+            [bgView setImage:[UIImage imageNamed:@"bg-iPad-Landscape.png"]];
+        } else if (orientation == UIInterfaceOrientationPortrait ||
+                   orientation == UIInterfaceOrientationPortraitUpsideDown) {
+            [playButton setWidth:372.0];
+            [settingsButton setWidth:372.0];
+
+            [bgView setImage:[UIImage imageNamed:@"bg-iPad.png"]];
+        }
+    }
 }
 
 #pragma mark -

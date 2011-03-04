@@ -36,6 +36,7 @@ extern NSString * const kSimonButtonSoundSetMarimba;
     SoundButton *blueButton;
     SoundButton *yellowButton;
 
+    UIImageView *bgView;
     UIBarButtonItem *settingsButton;
     UIBarButtonItem *playButton;
     UILabel *currentScoreLabel;
@@ -56,6 +57,7 @@ extern NSString * const kSimonButtonSoundSetMarimba;
 @property (nonatomic, assign) IBOutlet SoundButton *blueButton;
 @property (nonatomic, assign) IBOutlet SoundButton *yellowButton;
 
+@property (nonatomic, assign) IBOutlet UIImageView *bgView;
 @property (nonatomic, assign) IBOutlet UILabel *currentScoreLabel;
 @property (nonatomic, assign) IBOutlet UILabel *bestScoreLabel;
 @property (nonatomic, assign) IBOutlet UIBarButtonItem *settingsButton;
