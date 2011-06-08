@@ -13,7 +13,9 @@
 // Designated initializer.
 - (id)initWithURL:(NSURL *)url
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         if (AudioServicesCreateSystemSoundID((CFURLRef)url,
                                              &soundID) != noErr) {
             AudioServicesDisposeSystemSoundID(soundID);

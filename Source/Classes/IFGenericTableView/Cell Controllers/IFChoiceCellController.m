@@ -22,7 +22,9 @@
               atKey:(NSString *)newKey
             inModel:(id <IFCellModel>)newModel;
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         label = [newLabel retain];
         choices = [newChoices copy];
         key = [newKey retain];

@@ -33,11 +33,13 @@
                              userInfo:(id)userInfo
                               repeats:(BOOL)repeats
 {
-    if (self = [self initWithTimeInterval:interval
-                                   target:target
-                                 selector:selector
-                                 userInfo:userInfo
-                                  repeats:repeats]) {
+    self = [self initWithTimeInterval:interval
+                               target:target
+                             selector:selector
+                             userInfo:userInfo
+                              repeats:repeats];
+
+    if (self != nil) {
         [[NSRunLoop currentRunLoop] addTimer:self forMode:NSDefaultRunLoopMode];
     }
     return self;
