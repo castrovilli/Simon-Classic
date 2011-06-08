@@ -1,8 +1,8 @@
-## Simon Classic
+# Simon Classic has been pulled from the App Store due to a trademark infringement claim from Hasbro :-(.
 
 A remake of the classic Simon game for the iOS.
 
-Simon Classic is a greatly simplified reinterpretation of the Mac OS X classic [Simon Extreme](http://richd.com/simon/) for the iOS, which in turn is a reinterpretation of the classic 1978 Milton Bradley game [Simon](http://en.wikipedia.org/wiki/Simon_%28game%29).
+Simon Classic is (was) a greatly simplified reinterpretation of the Mac OS X classic [Simon Extreme](http://richd.com/simon/) for the iOS, which in turn is a reinterpretation of the classic 1978 Milton Bradley game [Simon](http://en.wikipedia.org/wiki/Simon_%28game%29).
 
 [![Available on the App Store](https://github.com/msanders/Simon-Classic/raw/master/readme-images/appstore.png)](http://itunes.apple.com/us/app/simon-classic/id355497080?mt=8)
 
