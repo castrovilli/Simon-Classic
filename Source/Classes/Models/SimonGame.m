@@ -35,7 +35,9 @@
 - (id)initWithDelegate:(id <SimonGameDelegate>)newDelegate
               maxDelay:(NSTimeInterval)maxDelay
 {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self != nil) {
         [self setDelegate:newDelegate];
         maxWaitInterval = maxDelay;
         gameState = kSimonGameStateIdle;
